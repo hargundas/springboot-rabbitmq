@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  queue:
+    name: hargun_queue
+  exchange:
+    name: hargun_exchange
+  routing:
+    key: hargun_routing_key

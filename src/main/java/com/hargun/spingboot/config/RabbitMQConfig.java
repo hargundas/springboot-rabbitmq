@@ -5,8 +5,9 @@ import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-@Configurable
+@Configuration
 public class RabbitMQConfig {
 
     @Value("${rabbitmq.queue.name}")
@@ -15,7 +16,7 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.exchange.name}")
     private String exchange;
 
-    @Value("${rabbitmq.routing.name}")
+    @Value("${rabbitmq.routing.key}")
     private String rountingKey;
 
     //rabbitmq bean  for rabbitmq queue
