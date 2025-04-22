@@ -8,7 +8,9 @@ spring:
 rabbitmq:
   queue:
     name: hargun_queue
+    json_name : hargun_json_queue
   exchange:
     name: hargun_exchange
   routing:
     key: hargun_routing_key
+    json_key: hargun_json_routing_key
